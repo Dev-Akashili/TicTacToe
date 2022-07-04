@@ -1,0 +1,10 @@
+.game-div {
+  background-color: #DDDDDD;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 1% auto;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}

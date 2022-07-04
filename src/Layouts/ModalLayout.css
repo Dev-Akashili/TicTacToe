@@ -1,0 +1,10 @@
+.main-div {
+  background-color: #eee;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 10% auto;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
