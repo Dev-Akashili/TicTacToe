@@ -48,26 +48,6 @@ function GameX() {
     }
   }
 
-  // function checkGame() {
-  //   if (!start && box1 === div2 && div2 === div3) {
-  //     setWin(true);
-  //   } else if (div4 !== "" && div4 === div5 && div5 === div6) {
-  //     setWin(true);
-  //   } else if (div7 !== "" && div7 === div8 && div8 === div9) {
-  //     setWin(true);
-  //   } else if (box1 !== "" && box1 === div4 && div4 === div7) {
-  //     setWin(true);
-  //   } else if (div2 !== "" && div2 === div5 && div5 === div8) {
-  //     setWin(true);
-  //   } else if (div3 !== "" && div3 === div6 && div6 === div9) {
-  //     setWin(true);
-  //   } else if (box1 !== "" && box1 === div5 && div5 === div9) {
-  //     setWin(true);
-  //   } else if (div3 !== "" && div3 === div5 && div5 === div7) {
-  //     setWin(true);
-  //   }
-  // }
-
   function game(e: React.MouseEvent<HTMLElement>) {
     const current = e.currentTarget.id;
     const value = e.currentTarget.innerText;
@@ -201,15 +181,15 @@ function GameX() {
 
   checkGame();
 
-  // if (win) {
-  //   return (
-  //     <Modal
-  //       text={side + " WINS!"}
-  //       buttonName1="Play Again"
-  //       buttonName2="Choose Sides"
-  //     />
-  //   );
-  // } else {
+  if (win) {
+    return (
+      <Modal
+        text={side + " WINS!"}
+        buttonName1="Play Again"
+        buttonName2="Choose Sides"
+      />
+    );
+  } else {
     return (
       <GameLayout>
         <Header />
@@ -227,6 +207,6 @@ function GameX() {
       </GameLayout>
     );
   }
-// }
+}
 
 export default GameX;
