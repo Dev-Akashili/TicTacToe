@@ -174,12 +174,16 @@ function GameX() {
     } else if (div3 !== "" && div3 === div5 && div5 === div7) {
       setWin(true);
     }
-    if (win) {
-      navigate("/game-over");
-    }
+    // if (win) {
+    //   navigate("/game-over");
+    // }
   }
 
   checkGame();
+
+  if (win) {
+    navigate("/game-over");
+  }
 
   if (win) {
     return (
